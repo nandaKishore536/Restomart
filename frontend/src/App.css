@@ -1,0 +1,104 @@
+/* Base styles */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Common styles */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-btn {
+  padding: 8px 14px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #333;
+}
+
+/* Task list styles */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+body.dark .task-card {
+  background: #2c2c2c;
+  border-color: #444;
+}
+
+.task-card h3 {
+  margin: 0 0 6px 0;
+}
+
+.actions button {
+  margin-right: 8px;
+}
+
+/* Form styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea,
+select,
+button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+button.btn {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 10px 14px;
+}
+
+button.btn:hover {
+  background: #0056b3;
+}
